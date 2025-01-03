@@ -11,5 +11,14 @@ class Person():
        print(f'I am {self.first_name} {self.last_name}')
 
 
-x = Person("john", "smith")
-x.report()
+class agent(Person):
+   
+   def reveal (self,passcode):
+      if passcode == 123:
+         print("I am a agent")
+
+      else:
+         self.report()
+
+x= agent("john", "smith")
+x.reveal(123)
